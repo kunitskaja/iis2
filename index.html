@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html style="height: 100%; width: 100%;">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lab 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body style="height: 100%; width: 100%; background-color: #fbaecb">
+
+<div style="text-align: center">
+    <img id = "imagebox" src="winx.jpg" height="400px" alt="альтернативный текст">
+</div>
+
+<p>Сколько вам лет?
+    <label for="age">Возраст (от 10 до 30):</label>
+    <input type="number" id="age" name="age" min="10" max="30">
+<p>
+    <button onclick="ageCheck()"> выбрать</button>
+
+<p>Сколько у вас братьев и сестер?
+    <label for="age">Количество братьев и сестер (от 0 до 10):</label>
+    <input type="number" id="siblings" name="siblings" min="0" max="10">
+<p>
+    <button onclick="siblingsCheck()"> выбрать</button>
+
+
+<p><label for="funny">Насколько важно для вас чувство юмора?</label>
+    <select id="funny">
+        <option value="1">бесполезно</option>
+        <option value="2">я плохо понимаю шутки</option>
+        <option value="3">хорошо, если есть над чем посмеяться</option>
+        <option value="4">очень важно</option>
+        <option value="5">единственное, что мне помогает жить эту жизнь</option>
+    </select></p>
+<button onclick="funnyCheck()"> выбрать </button>
+
+
+<p><label for="pet">Какого вы бы хотели себе питомца?</label>
+    <select id="pet">
+        <option value="1">игуана</option>
+        <option value="2">попугайчик</option>
+        <option value="3">кролик</option>
+        <option value="4">собака</option>
+        <option value="5">кот</option>
+    </select></p>
+<button onclick="petCheck()"> выбрать </button>
+
+<p><label for="color">Какой ваш любимый цвет?</label>
+    <select id="color">
+        <option value="1">зеленый</option>
+        <option value="2">желтый</option>
+        <option value="3">красный</option>
+        <option value="4">синий</option>
+        <option value="5">розовый</option>
+    </select></p>
+<button onclick="colorCheck()"> выбрать </button>
+
+<div style="text-align: center">
+    <button onclick="result()"> получить результат </button>
+</div>
+
+</body>
+<script src="index.js"></script>
+</html>
